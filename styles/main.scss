@@ -1,0 +1,90 @@
+@import "global";
+@import "variables";
+@import "media-queries";
+
+body {
+  background-color: $Very-dark-blue;
+  color: $White;
+}
+
+.card {
+  background-color: $Dark-desaturated-blue;
+  border-radius: 1rem;
+  display: flex;
+
+  width: 110rem;
+  height: 45rem;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  // &__overlay {
+
+  //   background-color: $Soft-violet-t;
+  //   width: 100%;
+  //   height: 100%;
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   right: 0;
+  // }
+
+  &__left {
+    padding: 8rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__heading {
+    font-weight: 700;
+    margin-bottom: 4rem;
+    font-size: 3.7rem;
+
+    &--soft-violet {
+      color: $Soft-violet;
+    }
+  }
+
+  &__description {
+    color: $Slightly-transparent-white-2;
+    margin-bottom: 6rem;
+    line-height: 1.8;
+  }
+
+  &__stats {
+    font-weight: 700;
+    font-size: 2.2rem;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    // gap: 3rem;
+    width: 100%;
+    justify-content: space-between;
+    letter-spacing: 0.1rem;
+  }
+  &__companies {
+    &--slightly-transparent-white {
+      color: $Slightly-transparent-white-2;
+      font-weight: 400;
+      font-size: 1.2rem;
+    }
+  }
+  &__templates {
+  }
+  &__queries {
+  }
+
+  &__image-container {
+    position: relative;
+    width: 50%;
+    background-color: $Soft-violet;
+  }
+
+  &__image {
+    width: 100%;
+    opacity: 0.3;
+  }
+}
