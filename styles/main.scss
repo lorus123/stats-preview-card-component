@@ -1,6 +1,5 @@
 @import "global";
 @import "variables";
-@import "media-queries";
 
 body {
   background-color: $Very-dark-blue;
@@ -88,3 +87,5 @@ body {
     opacity: 0.3;
   }
 }
+
+@import "media-queries";
